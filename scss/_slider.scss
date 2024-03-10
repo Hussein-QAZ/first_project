@@ -1,0 +1,17 @@
+// slider img
+
+.carousel-caption {
+  .shadow {
+    text-shadow: 0 0 10px $secondary;
+  }
+  h2 {
+    @extend .shadow;
+    font-size: 35px;
+  }
+}
+
+.pic {
+  height: 93.1vh;
+  width: 100%;
+  margin-top: 38px;
+}

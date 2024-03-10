@@ -1,0 +1,46 @@
+// contact section
+.contact {
+  padding: 50px;
+
+  h2 {
+    text-align: center;
+
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+  }
+
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  input,
+  textarea,
+  .submit-btn {
+    padding: 0.5rem 0;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+  }
+  input,
+  textarea {
+    width: 100%;
+    border-radius: 10px;
+  }
+  input:focus,
+  textarea:focus {
+    outline-color: blue;
+  }
+
+  .submit-btn {
+    width: 10rem;
+    margin-top: 0.5rem;
+    background: none;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,68 @@
+$primary: whitesmoke;
+$secondary: #000;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: $secondary;
+  div {
+    a {
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .colors {
+    animation: colors 45s linear infinite both;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: #fdf16b;
+    border: 1px solid #fdf16b;
+  }
+  20% {
+    background-color: #00b3f8;
+    border: 1px solid #00b3f8;
+  }
+  30% {
+    background-color: #ffe967;
+    border: 1px solid #ffe967;
+  }
+  40% {
+    background-color: #e51020;
+    border: 1px solid #e51020;
+  }
+  50% {
+    background-color: #551953;
+    border: 1px solid #551953;
+  }
+  60% {
+    background-color: #343ffd;
+    border: 1px solid #343ffd;
+  }
+  70% {
+    background-color: #009985;
+    border: 1px solid #009985;
+  }
+  80% {
+    background-color: #c53626;
+    border: 1px solid #c53626;
+  }
+  90% {
+    background-color: #039c41;
+    border: 1px solid #039c41;
+  }
+
+  100% {
+    background-color: #fdf16b;
+    border: 1px solid #fdf16b;
+  }
+}

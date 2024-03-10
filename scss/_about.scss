@@ -1,0 +1,14 @@
+// About section
+#about {
+  background-color: $secondary;
+  padding: 100px 50px;
+  h2 {
+    color: $primary;
+  }
+  p {
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+    color: $primary;
+  }
+}

@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMA</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b3111f0819.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header data-bs-theme="dark">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./images/logo-img/cinema-logo-53411DFFE5-seeklogo.com.png"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- menu-icon -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-4" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="#new">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="#popular">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="#trending">Trending</a>
+              </li>
+              <!-- Categories-dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fs-4"
+                  href="#Categories"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <form class="p-2 mb-2 border-bottom border-dark">
+                      <input
+                        type="search"
+                        class="form-control"
+                        autocomplete="false"
+                        placeholder="Type to filter..."
+                      />
+                    </form>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#horror"
+                      ><span
+                        class="d-inline-block bg-danger rounded-circle p-1 me-2"
+                      ></span>
+                      Horror</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#action"
+                      ><span
+                        class="d-inline-block bg-primary rounded-circle p-1 me-2"
+                      ></span>
+                      Action</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sci-fi"
+                      ><span
+                        class="d-inline-block bg-success rounded-circle p-1 me-2"
+                      ></span>
+                      Sci-fi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#comedy"
+                      ><span
+                        class="d-inline-block bg-info rounded-circle p-1 me-2"
+                      ></span>
+                      Comedy</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#drama"
+                      ><span
+                        class="d-inline-block bg-warning rounded-circle p-1 me-2"
+                      ></span>
+                      Drama</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- more info dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fs-4"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-info"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#about"> About</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#contact"> Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- search form -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="colors btn btn-outline-dark" type="submit">
+                Search
+              </button>
+            </form>
+            <!-- loge in dropdown form -->
+            <div class="col-md-3 text-end my-1">
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="colors btn btn-outline-dark dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  Loge in
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleDropdownFormEmail2"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleDropdownFormPassword2"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck2"
+                      />
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="colors btn btn-outline-dark mt-3"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">New around here? Sign up</a>
+                  <a class="dropdown-item" href="#">Forgot password?</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <!-- sliders -->
+        <div
+          id="myCarousel"
+          class="carousel slide mb-6"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic1.jpg"
+                alt="movies1"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h2>
+                    Unveiling Cinematic Marvels: Your Ultimate Movie
+                    Destination.
+                  </h2>
+                  <p class="opacity-75 shadow">
+                    Explore captivating films, from blockbusters to indie gems,
+                    in our curated collection. Your cinematic adventure starts
+                    here. Dive in now.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic2.jpg"
+                alt="movies2"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>
+                    Film Fanatics Rejoice: Your Ticket to Cinematic Bliss
+                    Awaits.
+                  </h2>
+                  <p class="shadow">
+                    Embark on a cinematic journey with our diverse selection of
+                    films. From action to drama, find your next favorite movie
+                    today.
+                  </p>
+                  <p>
+                    <a class="learn btn btn-lg btn-warning" href="#"
+                      >Learn more</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic3.jpg"
+                alt="movies3"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#"
+                      >Browse gallery</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic4.jpg"
+                alt="movies4"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-warning" href="#"
+                      >Browse gallery</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic5.jpg"
+                alt="movies5"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-danger" href="#">Browse gallery</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic6.jpg"
+                alt="movies6"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-danger" href="#">Browse gallery</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic7.jpg"
+                alt="movies7"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#"
+                      >Browse gallery</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic8.jpg"
+                alt="movies8"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-info" href="#">Browse gallery</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item mt-4">
+              <img
+                class="pic"
+                src="./images/slider-img/pic9.jpg"
+                alt="movies9"
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h2>One more for good measure.</h2>
+                  <p class="shadow">
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-danger" href="#">Browse gallery</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about section">
+        <h2>About</h2>
+        <p>
+          Welcome to our movie haven, where cinema lovers unite! Our website is
+          dedicated to bringing you the latest and greatest in the world of
+          film. Whether you're a cinephile seeking hidden gems or a casual
+          viewer looking for weekend entertainment, we've got you covered. Dive
+          into a vast collection of movies spanning genres, eras, and cultures,
+          curated to delight and inspire. Join us on this cinematic journey as
+          we celebrate the magic of storytelling through the silver screen.
+        </p>
+      </section>
+      <!-- new -->
+      <section class="section section-new" id="new">
+        <h2>New</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/Way9Dexny3w?si=y0IFNHhfso92pIlq"
+              ><div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/dune2.jpg"
+                  alt="Dune: Part Two poster"
+                />
+                <h4>Dune: Part Two</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/iM150ZWovZM?si=SpcplIXDIIODvltx"
+              ><div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/dAMSEL.jpg"
+                  alt="DAMSEL(2024) poster"
+                />
+                <h4>DAMSEL(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/7mgu9mNZ8Hk?si=JK-35Y8i4K9yi-La"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/Argylle-128844593-large.jpg"
+                  alt="Argylle(2024) poster"
+                />
+                <h4>Argylle(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/fFtdbEgnUOk?si=PpBOljrJfdQzUVkh"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/Mean Girls(2024).webp"
+                  alt="Mean Girls(2024)poster"
+                />
+                <h4>Mean Girls(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/s_76M4c4LTo?si=jzjYe3K47BcpJw3Y"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/Madame Web(2024).webp"
+                  alt="Madame Web(2024) poster"
+                />
+                <h4>Madame Web(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/SzINZZ6iqxY?si=7R9Tw1pyYDyEiKlS"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/The Beekeeper(2024).jpg"
+                  alt="The Beekeeper(2024)poster"
+                />
+                <h4>The Beekeeper(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/vk2OJZHutBM?si=J6_1JTmBzEge-gQM"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/miller.jpg"
+                  alt="Miller's Girl(2024) poster"
+                />
+                <h4>Miller's Girl(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/oLvrlajijhk?si=LEKmVUX_h4ncfVRU"
+            >
+              <div class="big-box">
+                <span class="span-new">New</span>
+                <img
+                  src="./images/new-img/MV5BMTEyOTQzZjgtMDM1OC00MWMxLWI2ZGUtYWUwOTQxNTRmZTU0XkEyXkFqcGdeQXVyNTU1MDIzMzg@._V1_.jpg"
+                  alt="Miller's Girl(2024) poster"
+                />
+                <h4>No Way Up(2024)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <!-- Popular -->
+      <section class="section section-pop" id="popular">
+        <h2>Popular</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/IpKmt4MpctM?si=zzv2f6QIz10ISAD5"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/The Hitman’s Bodyguard 2017.jpg"
+                  alt="The Hitman’s Bodyguard 2017 poster"
+                />
+                <h4>The Hitman’s Bodyguard</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/zAGVQLHvwOY?si=uulkxmiU8CWIMWal"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Joker(2019).webp"
+                  alt="Joker poster"
+                />
+                <h4>Joker</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/76yBTNDB6vU?si=BS9PMPdpKZ4moriU"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Don’t Breathe 2016.jpg"
+                  alt="Don’t Breathe 2016 poster"
+                />
+                <h4>Don’t Breathe</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/zSWdZVtXT7E?si=4uKJGzwxuy-DPplx"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Interstellar 2014.jpg"
+                  alt="Interstellar 2014 poster"
+                />
+                <h4>Interstellar</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/o2AsIXSh2xo?si=vneb3QSEgZRYCmCZ"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Bird Box 2018.jpg"
+                  alt="Bird Box 2018 poster"
+                />
+                <h4>Bird Box</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/WR7cc5t7tv8?si=tcfbT-A1mM3VekSe"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/A Quiet Place 2018 .jpg"
+                  alt="A Quiet Place 2018 poster"
+                />
+                <h4>A Quiet Place</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/CmRih_VtVAs?si=Jzrtfq95W8DF23ww"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Suicide Squad 2016.jpg"
+                  alt="Suicide Squad 2016 poster"
+                />
+                <h4>Suicide Squad</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/6dSKUoV0SNI?si=fXORojZFqCvVzWp2"
+            >
+              <div class="big-box">
+                <span class="span-new">Pop</span>
+                <img
+                  src="./images/popular-img/Escape Room 2019.jpg"
+                  alt="Suicide Squad 2016 poster"
+                />
+                <h4>Escape Room(2019)</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <!-- Trending -->
+      <section class="section section-trend" id="trending">
+        <h2>Trending</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/Way9Dexny3w?si=mSuhftQVcexW22yY"
+            >
+              <div class="big-box">
+                <span class="span-new"
+                  ><i class="fa-brands fa-gripfire"></i
+                ></span>
+                <img
+                  src="./images/new-img/dune2.jpg"
+                  alt="Dune: Part Two poster"
+                />
+                <h4>Dune: Part Two</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/GBEgoaLZzXM?si=KufD_h6YkDitxzL0"
+            >
+              <div class="big-box">
+                <span class="span-new"
+                  ><i class="fa-brands fa-gripfire"></i
+                ></span>
+                <img src="./images/trending-img/Halo.jpeg" alt="Halo poster" />
+                <h4>Halo</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/iM150ZWovZM?si=RZo6op5zmk1l5riZ"
+            >
+              <div class="big-box">
+                <span class="span-new"
+                  ><i class="fa-brands fa-gripfire"></i
+                ></span>
+                <img
+                  src="./images/new-img/dAMSEL.jpg"
+                  alt="DAMSEL(2024) poster"
+                />
+                <h4>DAMSEL</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://youtu.be/Uaz1D2oYzco?si=iXs9SFrk__sMAdIO"
+            >
+              <div class="big-box">
+                <span class="span-new"
+                  ><i class="fa-brands fa-gripfire"></i
+                ></span>
+                <img
+                  src="./images/trending-img/Wanted Man 2024.jpg"
+                  alt="Wanted Man 2024 poster"
+                />
+                <h4>Wanted Man</h4>
+                <div class="little-box">
+                  <i class="fa-brands fa-google-play"></i>
+                </div></div
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <!-- Categories -->
+      <section id="categories">
+        <div class="movies" id="horror">
+          <h2 class="title series-title">Horror</h2>
+          <div class="content">
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/the-last-of-us-hbo-review-1200x720.jpg"
+                  alt="the-last-of-us-hbo-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  The Last of Us" is a critically acclaimed video game series
+                  developed by Naughty Dog, and it's also being adapted into an
+                  HBO television series. Set in a post-apocalyptic world, it
+                  follows the journey of survivors Joel and Ellie as they
+                  navigate dangers and form a powerful bond on both the gaming
+                  console and the small screen.
+                </p>
+                <strong class="movies-title">
+                  <span>The Last of Us</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/iKpKAlbJ7BQ?feature=shared"
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Last_of_Us_(TV_series) "
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img src="./images/photos/From.jpg" alt="From-image" />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is an American science fiction horror television series
+                  created by John Griffin for Epix (later rebranded as MGM+).
+                  The first season premiered on February 20, 2022. In April
+                  2022, the series was renewed for a second season which
+                  premiered on April 23, 2023. In June 2023, the series was
+                  renewed for a third season set to premiere in 2024.
+                </p>
+                <strong class="movies-title">
+                  <span>From</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/pDHqAj4eJcM?feature=shared"
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/From_(TV_series) "
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/A-Quiet-Place.jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2018 horror film directed by John Krasinski. The story is
+                  set in a post-apocalyptic world where deadly creatures hunt by
+                  sound, forcing a family to live in silence. The film explores
+                  their struggle for survival and the challenges they face while
+                  remaining quiet in a world where noise means death.
+                </p>
+                <strong class="movies-title">
+                  <span>A Quiet Place</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/WR7cc5t7tv8?si=4mUlSC2akkxq_kVj "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/A_Quiet_Place"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/I-Am-Legend.jpg"
+                  alt="I-Am-Legend-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2007 science fiction film starring Will Smith. It
+                  portrays the story of a survivor in a post-apocalyptic world
+                  ravaged by a virus that turns humans into mutants. The
+                  protagonist, Robert Neville, must find a cure while battling
+                  loneliness and the infected creatures that now roam New York
+                  City.
+                </p>
+                <strong class="movies-title">
+                  <span>I Am Legend</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/dtKMEAXyPkg?si=aqR1ZO3rr1AVxsPQ"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/I_Am_Legend_(film) "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/InsidiousRedDoor-HE-NWP.jpg"
+                  alt="I-Am-Legend-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Insidious: The Red Door" is the fifth installment in the
+                  popular horror franchise directed by Patrick Wilson. This
+                  time, the story follows a new family as they move into a
+                  seemingly peaceful suburban home, only to discover that it
+                  holds a dark secret behind a mysterious red door. As
+                  supernatural occurrences escalate, they must confront
+                  terrifying entities from the Further, the malevolent realm
+                  introduced in previous films.
+                </p>
+                <strong class="movies-title">
+                  <span>Insidious: The Red Door</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/ZuQuOnYnr3Q?si=5j5GdNo8CayVTq1p"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Insidious:_The_Red_Door"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/The-Conjuring-large.webp"
+                  alt="I-Am-Legend-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "The Conjuring" is a 2013 supernatural horror film directed by
+                  James Wan. The film is based on the real-life paranormal
+                  investigations of Ed and Lorraine Warren, a husband-and-wife
+                  team of demonologists and paranormal investigators. In the
+                  movie, they are called upon to help the Perron family, who are
+                  experiencing disturbing and terrifying events in their new
+                  home. As the Warrens delve deeper into the case, they uncover
+                  a malevolent presence haunting the house, leading to a
+                  confrontation with powerful demonic forces.
+                </p>
+                <strong class="movies-title">
+                  <span>The Conjuring</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/k10ETZ41q5o?si=5pILq9qFRTcaiYW0"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Conjuring"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movies" id="action">
+          <h2 class="title series-title">Action</h2>
+          <div class="content">
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/PLANE2.jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  Plane is a 2023 action-thriller film directed by Jaume
+                  Collet-Serra and starring Gerard Butler, Frank Grillo, and Joe
+                  Manganiello. The movie follows a former Marine turned flight
+                  security expert who is forced to confront his demons when
+                  terrorists hijack a transatlantic flight. As he battles to
+                  save the passengers and crew, he discovers a sinister
+                  conspiracy that threatens not only the plane but also global
+                  security. "Plane" delivers intense action sequences,
+                  suspenseful twists, and compelling performances, making it a
+                  thrilling ride from takeoff to landing.
+                </p>
+                <strong class="movies-title">
+                  <span>Plane</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/M25zXBIUVr0?si=DDNXF1Wdb43MNPo9"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Plane_(film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Hypnotic (2023 film).jpeg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2023 psychological thriller directed by Robert Rodriguez
+                  and starring Ben Affleck, Alice Braga, and Peter Dinklage. The
+                  film follows a detective (Affleck) who becomes entangled in a
+                  mysterious case involving hypnosis, as he investigates a
+                  series of unexplained deaths. As he delves deeper into the
+                  investigation, he begins to uncover dark secrets about his own
+                  past and the true nature of reality. "Hypnotic" offers a
+                  gripping narrative, intense performances, and mind-bending
+                  twists that will keep audiences on the edge of their seats
+                  until the very end.
+                </p>
+                <strong class="movies-title">
+                  <span>Hypnotic</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/N-qn4h-amyY?si=q2E3kk5NyIFMzOgh"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Hypnotic_(2023_film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/equalizerfeature.webp"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "The Equalizer 3" is a 2023 action thriller film directed by
+                  Antoine Fuqua and starring Denzel Washington. It is the third
+                  installment in "The Equalizer" film series, following the
+                  character Robert McCall, a retired CIA black ops operative who
+                  now uses his skills to help those in need. In this
+                  installment, McCall finds himself drawn back into the world of
+                  espionage and danger when a personal tragedy strikes close to
+                  home. As he seeks justice and vengeance, McCall faces
+                  formidable adversaries and confronts his own inner demons.
+                </p>
+                <strong class="movies-title">
+                  <span>The Equalizer 3</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/19ikl8vy4zs?si=4vDNN-toZWdoSQbe"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Equalizer_3"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Fast X.jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Fast X" is the working title for the tenth installment in the
+                  "Fast & Furious" film franchise. Directed by Justin Lin, the
+                  movie is set to continue the high-octane action and
+                  adrenaline-fueled adventures that fans have come to expect
+                  from the series. While specific plot details may not be
+                  available yet, audiences can anticipate jaw-dropping stunts,
+                  intense car chases, and the return of beloved characters.
+                  "Fast X" promises to rev up the excitement and push the
+                  boundaries of the franchise to new levels of speed and
+                  spectacle.
+                </p>
+                <strong class="movies-title">
+                  <span>Fast X</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/32RAq6JzY-w?si=eOr0V1Yr-WuCQfsz"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Fast_X"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/John Wick: Chapter 4.jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "John Wick: Chapter 4" is the highly anticipated fourth
+                  installment in the action-packed "John Wick" film series,
+                  directed by Chad Stahelski. Starring Keanu Reeves as the
+                  titular character, the movie continues the story of the
+                  legendary hitman as he navigates a world of assassins,
+                  intrigue, and revenge. While specific plot details are being
+                  kept under wraps, fans can expect breathtaking action
+                  sequences, stylish cinematography, and the relentless pursuit
+                  of justice that has become synonymous with the franchise.
+                </p>
+                <strong class="movies-title">
+                  <span>John Wick: Chapter 4</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/qEVUtrk8_B4?si=L4P8Ze-yRw1vJ9lf"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/John_Wick:_Chapter_4"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Blacklight (film).jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Blacklight" is a 2022 action thriller film directed by Mark
+                  Williams and starring Liam Neeson, Aidan Quinn, and Taylor
+                  John Smith. In the movie, Neeson portrays Travis Block, a
+                  troubled FBI agent who is tasked with uncovering a conspiracy
+                  within the bureau while also grappling with his own past. As
+                  Block delves deeper into the investigation, he finds himself
+                  entangled in a web of corruption, deceit, and danger, where no
+                  one can be trusted.
+                </p>
+                <strong class="movies-title">
+                  <span>Blacklight</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/PE04ESdgnHI?si=FZ_nreqq6ROcISVe"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Blacklight_(film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movies" id="sci-fi">
+          <h2 class="title series-title">Sci-fi</h2>
+          <div class="content">
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/westworld1.jpg"
+                  alt="westworld-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is an HBO science fiction television series created by
+                  Jonathan Nolan and Lisa Joy. It's set in a futuristic theme
+                  park where lifelike android hosts cater to human guests'
+                  desires. The show explores themes of consciousness, artificial
+                  intelligence, and the consequences of playing with reality,
+                  delving into a complex narrative that blurs the lines between
+                  humans and machines.
+                </p>
+                <strong class="movies-title">
+                  <span>Westworld</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/kEkZdgWu7mM?feature=shared"
+                    title="Have a look"
+                    class="more-details series-color"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Westworld_(TV_series)"
+                    title="Have a look"
+                    class="more-details series-color"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img src="./images/photos/sense8.jpg" alt="sense8-image" />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a Netflix series created by Lana and Lilly Wachowski and J.
+                  Michael Straczynski. It follows the lives of eight strangers
+                  from around the world who become psychically connected,
+                  sharing thoughts and abilities. As they navigate the
+                  challenges of their interconnected existence, the show
+                  explores themes of identity, diversity, and the power of human
+                  connection.
+                </p>
+                <strong class="movies-title">
+                  <span>Sense8</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/iKpKAlbJ7BQ?feature=shared"
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Sense8 "
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img src="./images/photos/Calls.jpg" alt="Calls-image" />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is an innovative series that relies primarily on audio
+                  recordings to narrate its interconnected stories. Through a
+                  blend of suspense, mystery, and supernatural elements, the
+                  show creates an immersive experience, engaging viewers in a
+                  distinct and gripping auditory journey that explores the
+                  intricacies of human connection and the unknown.
+                </p>
+                <strong class="movies-title">
+                  <span>Calls</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/RfpzdSJlv6o?feature=shared"
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Calls_(TV_series) "
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Inception.jpg"
+                  alt="Inception-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2010 science fiction film directed by Christopher Nolan.
+                  The movie stars Leonardo DiCaprio as a skilled thief who
+                  enters the dreams of others to steal their secrets. It
+                  explores complex themes of reality, dreams, and the
+                  subconscious mind, offering a visually stunning and
+                  intellectually engaging cinematic experience.
+                </p>
+                <strong class="movies-title">
+                  <span>Inception</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/8hP9D6kZseM?si=43kJKDfqknkkCpY-"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Inception "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Interstellar.jpg"
+                  alt="Interstellar-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2014 science fiction film directed by Christopher Nolan.
+                  Starring Matthew McConaughey and Anne Hathaway, it follows a
+                  group of astronauts who embark on a journey through a wormhole
+                  near Saturn to find a new habitable planet for humanity. The
+                  film explores complex themes of time dilation, space
+                  exploration, and the survival of humanity in a distant future,
+                  offering both stunning visuals and intellectual depth.
+                </p>
+                <strong class="movies-title">
+                  <span>Interstellar</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/zSWdZVtXT7E?si=xBcKDmlq0foevDlU"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Interstellar_(film) "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+            <div class="movies-card">
+              <div class="movies-image">
+                <img src="./images/photos/Lucy.jpg" alt="Lucy-image" />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2014 science fiction film directed by Luc Besson,
+                  starring Scarlett Johansson. It follows the story of a woman
+                  named Lucy who gains superhuman abilities after a synthetic
+                  drug is implanted in her body. As her powers grow, she seeks
+                  to unlock the full potential of her mind while facing various
+                  challenges. The film explores themes of human potential,
+                  evolution, and the limits of the human brain.
+                </p>
+                <strong class="movies-title">
+                  <span>Lucy</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/MVt32qoyhi0?si=7LMdXkBJmqK3bFg5 "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Lucy_(2014_film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movies" id="comedy">
+          <h2 class="title series-title">Comedy</h2>
+          <div class="content">
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/tully-charlize-theron.webp"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Tully" is a 2018 comedy-drama film directed by Jason Reitman
+                  and written by Diablo Cody. Starring Charlize Theron,
+                  Mackenzie Davis, and Ron Livingston, the film follows Marlo, a
+                  mother of three who is struggling with the challenges of
+                  motherhood, including sleep deprivation and postpartum
+                  depression. Marlo's life takes an unexpected turn when she
+                  hires a young nanny named Tully, who forms a unique bond with
+                  her and offers support during her difficult times.
+                </p>
+                <strong class="movies-title">
+                  <span>Tully</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/e5D3O4yCmCg?si=9Y_QQoHO4qq7MhWe"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Tully_(2018_film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Cocaine-Bear.webp"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Cocaine Bear" is an upcoming film directed by Elizabeth
+                  Banks, based on a true story that took place in 1985. The
+                  movie centers around a black bear in Kentucky that
+                  accidentally consumed a large amount of cocaine dropped from a
+                  plane by a drug smuggler. The bear's unusual behavior and
+                  subsequent death led to a bizarre chain of events involving
+                  law enforcement, drug dealers, and the discovery of the drugs
+                  in the bear's stomach.
+                </p>
+                <strong class="movies-title">
+                  <span>Cocaine Bear</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/DuWEEKeJLMI?si=RGKdY-karvDJmlWM"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Cocaine_Bear"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Me Time.jpg"
+                  alt="A-Quiet-Place-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "Me Time" is an upcoming comedy film directed by John Hamburg
+                  and starring Kevin Hart and Mark Wahlberg. The movie follows a
+                  stay-at-home dad who embarks on a solo vacation when his plans
+                  for a peaceful "me time" are interrupted by his overbearing
+                  family. As he navigates unexpected adventures and challenges
+                  during his trip, he rediscovers himself and the importance of
+                  taking time for self-care. "Me Time" promises to deliver
+                  laughs, heartwarming moments, and relatable insights into the
+                  balancing act of modern parenthood.
+                </p>
+                <strong class="movies-title">
+                  <span>Me Time</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/Mmq_NVwLN_g?si=4AnCYaNiyFnfG2FY"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Me_Time_(film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movies" id="drama">
+          <h2 class="title series-title">Drama</h2>
+          <div class="content">
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/NINE-PERFECT-STRANGERS1.jpg"
+                  alt="NINE-PERFECT-STRANGERS-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a TV series adaptation of Liane Moriarty's novel. It
+                  unfolds at a wellness retreat, where nine people are led by a
+                  enigmatic guru. As they seek transformation, hidden secrets
+                  and blurred boundaries between healing and manipulation come
+                  to light. The show delves into themes of personal growth and
+                  the complex motivations of its characters.
+                </p>
+                <strong class="movies-title">
+                  <span>Nine Perfect Strangers</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/PXGEov45yHE?feature=shared"
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Nine_Perfect_Strangers_(TV_series) "
+                    class="more-details series-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/Nine-Days.jpg"
+                  alt="Nine-Days-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  is a 2020 drama film written and directed by Edson Oda. It
+                  follows the story of a reclusive man named Will, played by
+                  Winston Duke, who interviews souls for a chance at life on
+                  Earth. The film explores themes of existence, choices, and the
+                  human experience through a thought-provoking and emotional
+                  narrative.
+                </p>
+                <strong class="movies-title">
+                  <span>Nine Days</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/A73FnWETvr8?si=Eh-VQyoP0q89-puV"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Nine_Days_(film) "
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/The End We Start From.jpg"
+                  alt="Nine-Days-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "The End We Start From" is a film adaptation of the acclaimed
+                  novel of the same name by Megan Hunter. Directed by Samantha
+                  Shannon, the film explores a dystopian world where London is
+                  submerged underwater due to catastrophic flooding. The story
+                  follows a woman who gives birth to her first child just as the
+                  disaster unfolds, and she navigates the challenges of
+                  motherhood amidst the chaos and uncertainty of her
+                  environment.
+                </p>
+                <strong class="movies-title">
+                  <span>The End We Start From</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/MciSEbkTkXw?si=i_lVUEtLLYwLoP5T"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_End_We_Start_From"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/The Whale (2022 film).jpeg"
+                  alt="Nine-Days-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "The Whale" is a 2022 drama film directed by Darren Aronofsky
+                  and starring Brendan Fraser. It tells the story of a
+                  reclusive, morbidly obese man named Charlie, who is trying to
+                  reconnect with his teenage daughter while also grappling with
+                  his own mortality. The film explores themes of redemption,
+                  forgiveness, and the complexities of human relationships.
+                  Brendan Fraser's transformative performance and Aronofsky's
+                  poignant direction make "The Whale" a compelling and
+                  emotionally resonant cinematic experience.
+                </p>
+                <strong class="movies-title">
+                  <span>The Whale</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/nWiQodhMvz4?si=fIA9nCw_0Cnd48iU"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Whale_(2022_film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/The Father (2020 film).jpg"
+                  alt="Nine-Days-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "The Father" is a 2020 drama film directed by Florian Zeller,
+                  based on his own play "Le Père." Starring Anthony Hopkins and
+                  Olivia Colman, the film follows an elderly man named Anthony
+                  who is struggling with dementia, and his daughter Anne who
+                  tries to support him while navigating her own life. The movie
+                  offers a deeply emotional and immersive exploration of the
+                  effects of dementia on both the individual and their loved
+                  ones, with Hopkins delivering a powerful and poignant
+                  performance that earned him critical acclaim and numerous
+                  awards.
+                </p>
+                <strong class="movies-title">
+                  <span>The Father</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/4TZb7YfK-JI?si=bLsadwVhjpbcnNly"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Father_(2020_film)"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+
+            <div class="movies-card">
+              <div class="movies-image">
+                <img
+                  src="./images/photos/A Man Called Otto.jpg"
+                  alt="Nine-Days-image"
+                />
+              </div>
+              <div class="movies-info">
+                <p class="movies-category">
+                  "A Man Called Otto" is an upcoming drama film directed by
+                  Lasse Hallström, based on the novel "A Man Called Ove" by
+                  Fredrik Backman. The story revolves around a grumpy yet
+                  lovable old man named Otto who finds new purpose in life after
+                  a series of unexpected events and encounters with his quirky
+                  neighbors. As Otto reluctantly becomes involved in the lives
+                  of those around him, he discovers the true meaning of
+                  friendship, community, and love.
+                </p>
+                <strong class="movies-title">
+                  <span>A Man Called Otto</span>
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/eFYUX9l-m5I?si=jJUnd1BA65iTPgT3"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Trailer</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/A_Man_Called_Otto"
+                    class="more-details moves-color"
+                    title="Have a look"
+                    >Wiki</a
+                  >
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us!</h2>
+      <!-- form -->
+      <div class="d-flex justify-content-center align-items-center">
+        <form action="" class="col-6" method="post">
+          <div>
+            <label for="user-name">Your name:</label>
+            <input
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder=" Please fill your full name"
+              minlength="1"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Your email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder=" Please enter your email"
+              minlength="5"
+            />
+          </div>
+          <div>
+            <label for="help">Your message:</label>
+            <textarea
+              name="help"
+              id="help"
+              cols="30"
+              rows="10"
+              placeholder=" Send us a message!"
+              minlength="1"
+              r
+            ></textarea>
+          </div>
+          <div>
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wraper">
+        <ul>
+          <li>
+            <a class="html" href="#"><i class="fa-brands fa-html5"></i></a>
+          </li>
+          <li>
+            <a class="css3" href="#"><i class="fa-brands fa-css3-alt"></i></a>
+          </li>
+          <li>
+            <a class="sass" href="#"><i class="fa-brands fa-sass"></i></a>
+          </li>
+          <li>
+            <a class="bootstrap" href="#"
+              ><i class="fa-brands fa-bootstrap"></i
+            ></a>
+          </li>
+          <li>
+            <a class="font-awesome" href="#"
+              ><i class="fa-solid fa-font-awesome"></i
+            ></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a class="github" href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a class="x-twitter" href="#"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a class="insta" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="facebook" href="#"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a class="linkedin" href="#"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <span>&#169; 2024 CINEMA</span>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

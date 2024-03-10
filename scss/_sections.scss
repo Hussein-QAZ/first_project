@@ -1,0 +1,100 @@
+.section {
+  padding-top: 50px;
+  h2 {
+    text-align: center;
+    font-size: 80px;
+    font-family: "Anton", sans-serif;
+    margin-bottom: 50px;
+    color: #212529;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px;
+    li {
+      .big-box {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: transparent;
+        overflow: hidden;
+
+        &:hover img {
+          transform: scale(1.1);
+        }
+
+        &:hover div {
+          background-color: rgba(0, 0, 0, 0.322);
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        .span-new {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.281);
+          font-size: x-large;
+          color: $primary;
+          padding: 5px;
+          border-radius: 0 50% 50% 0;
+          i {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+          }
+        }
+
+        h4 {
+          position: absolute;
+          bottom: 0;
+          color: $primary;
+          background-color: rgba(0, 0, 0, 0.5);
+          width: 100%;
+          text-align: center;
+          padding: 10px 5px;
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 500ms;
+        }
+        .little-box {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          color: $primary;
+          opacity: 0;
+          font-size: 100px;
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+.section-new,
+.section-trend {
+  padding: 100px 200px;
+}
+.section-pop {
+  @extend .movies;
+  h2 {
+    color: $primary;
+  }
+}

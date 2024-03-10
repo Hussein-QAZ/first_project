@@ -1,0 +1,38 @@
+// Footer
+.footer {
+  background-color: $secondary;
+  color: $primary;
+  padding: 20px;
+  .wraper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      width: 40%;
+      a {
+        text-decoration: none;
+        font-size: x-large;
+        color: $primary;
+        &:hover {
+          color: pink;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  span {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
